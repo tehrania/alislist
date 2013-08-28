@@ -7,7 +7,7 @@ get '/create_post' do
 end
 
 post '/category' do 
- 
+
   category_id = params[:post][:category_id] 
   Post.create(params[:post])
   redirect to ("/category/#{params[:post][:category_id]}")
@@ -19,3 +19,18 @@ get '/category/:id' do
   @posts = category.posts 
   erb :category
 end
+
+
+# post '/post' do 
+ 
+#   category_id = params[:post][:category_id] 
+#   Post.create(params[:post])
+#   redirect to ("/category/#{params[:post][:category_id]}")
+# end 
+
+# get '/post/:id' do   
+#   p params
+#   category = Category.find(params[:id])
+#   @posts = category.posts 
+#   erb :category
+# end
