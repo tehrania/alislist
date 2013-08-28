@@ -1,11 +1,8 @@
 <div class="container">
 
-<%@posts.each do |post|%>
-<%= post.title  %> 
-<%= post.price  %>
-<%= post.description  %>
-<%= post.email  %>
-<br/>
-<% end %>
+  <h1><%= @post.title  %></h1> 
+  <h2><%= @post.price  %></h2>
+  <h2><%= @post.description  %></h2>
+  <h2><%= @post.email  %></h2>
 
 </div>

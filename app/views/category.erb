@@ -1,7 +1,7 @@
 <div class="container">
 
 <%@posts.each do |post|%>
-<%= post.title  %> 
+<%= "<a href='/post/#{post.id}'>#{post.title}</a>" %> 
 
 <br/>
 <% end %>
