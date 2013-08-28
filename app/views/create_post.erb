@@ -1,4 +1,37 @@
+<div class="container">
 
+<form method = "post" action="/category">
 
+<select  name="post[category_id]">
+    <option value="Default"disabled='disabled' selected='selected'>Category</option>
+  <option value="1">Electronics</option>
+  <option value="2">Collectibles</option>
+  <option value="3">Household</option>
+  <option value="4">Tools</option>
+  <option value="5">Sporting</option>
+</select> 
 
+<br><br>
 
+<input type="text" size="25" placeholder="title" name="post[title]">
+
+<br><br>
+
+<input type="text" size="25" placeholder="price" name="post[price]">
+
+<br><br>
+
+<textarea cols="40" rows="5"  placeholder="description" name="post[description]">
+Description 
+</textarea>
+
+<br><br>
+
+<input type="text" size="25" name="post[email]">
+
+<br><br>
+<input type="submit" value="create post">
+
+</form>
+
+</div>
